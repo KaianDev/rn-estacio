@@ -1,15 +1,30 @@
-import { StyleSheet, Text, View } from "react-native"
-import { Button } from "tamagui"
+import { router } from "expo-router"
+import { SafeAreaView, StyleSheet } from "react-native"
+import { Button, Text, View } from "tamagui"
 
-export default function Page() {
+export default function HomePage() {
   return (
-    <View style={styles.container}>
-      <View style={styles.main}>
-        <Text style={styles.title}>Hello World</Text>
-        <Text style={styles.subtitle}>This is the first page of your app.</Text>
-        <Button backgroundColor="$orange8">Hello World</Button>
+    <SafeAreaView style={styles.container}>
+      <View gap={16} alignItems="center" justifyContent="center" flex={1}>
+        <Text fontSize={64} fontWeight={"bold"} textAlign="center">
+          Facilitador
+        </Text>
+        <Text fontSize={28} textAlign="center" color="$gray10">
+          Bem vindo ao facilitador
+        </Text>
+        <Button
+          onPress={() => router.push("/engineer")}
+          backgroundColor="black"
+          color={"white"}
+          width={200}
+          fontSize={24}
+          fontWeight="bold"
+          justifyContent="center"
+          alignItems="center">
+          Entrar
+        </Button>
       </View>
-    </View>
+    </SafeAreaView>
   )
 }
 
@@ -18,19 +33,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     padding: 24,
-  },
-  main: {
-    flex: 1,
-    justifyContent: "center",
-    maxWidth: 960,
-    marginHorizontal: "auto",
-  },
-  title: {
-    fontSize: 64,
-    fontWeight: "bold",
-  },
-  subtitle: {
-    fontSize: 36,
-    color: "#38434D",
+    backgroundColor: "#eee",
   },
 })
