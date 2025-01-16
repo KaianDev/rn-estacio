@@ -20,6 +20,9 @@ importers:
       '@tamagui/core':
         specifier: ^1.121.11
         version: 1.121.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@tamagui/lucide-icons':
+        specifier: ^1.121.11
+        version: 1.121.11(react-dom@18.3.1(react@18.3.1))(react-native-svg@15.11.1(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.18)(react@18.3.1))(react@18.3.1))(react@18.3.1)
       expo:
         specifier: ~52.0.25
         version: 52.0.25(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@expo/metro-runtime@4.0.0(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.18)(react@18.3.1)))(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.18)(react@18.3.1))(react@18.3.1)
@@ -1612,6 +1615,12 @@ packages:
     peerDependencies:
       react: '*'
 
+  '@tamagui/helpers-icon@1.121.11':
+    resolution: {integrity: sha512-RTqpq5LC8Hrw+RaM4p5AN00qY8tAQ947a3jEl/cKPMKv3U+FgWGGzZVe5gUaYUxSdZUSqjpLtSQ5sDSuj/lOsg==}
+    peerDependencies:
+      react: '*'
+      react-native-svg: '>=12'
+
   '@tamagui/helpers-node@1.121.11':
     resolution: {integrity: sha512-1QOVODsFEq/H6R3bFTGN5+cgoG5E1MoUI+BhuUxzZrQIjgBMsd7eXTpe8Kou53fUBs2auFxJATirbPoBTXqACg==}
 
@@ -1643,6 +1652,12 @@ packages:
     resolution: {integrity: sha512-1CDhIuBL+eTsiAoZH3uw4hTCPFqWyDx8fepR21jmriVJzoGs/7HlZ23Xu72/hy6DQjPca5iwGDTa6A7Co3mT7A==}
     peerDependencies:
       react: '*'
+
+  '@tamagui/lucide-icons@1.121.11':
+    resolution: {integrity: sha512-sG61J0K6AhrNqyUsdEQZ5cL9qjg32iOeITy1oTOGsaT6SxnUCZceIoSf/Lv8Vsjdmxr945siTIO/eWnQZhLc8Q==}
+    peerDependencies:
+      react: '*'
+      react-native-svg: '>=12'
 
   '@tamagui/normalize-css-color@1.121.11':
     resolution: {integrity: sha512-SBnS1sUKmq21Zl7teckLlJiHIyLPhoXpSw2SxHnJwcaakH11Re71hj4LMkzaGwCGP09OUrkDB+bPq9Ya6T7/lQ==}
@@ -7091,6 +7106,14 @@ snapshots:
     transitivePeerDependencies:
       - react-dom
 
+  '@tamagui/helpers-icon@1.121.11(react-dom@18.3.1(react@18.3.1))(react-native-svg@15.11.1(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.18)(react@18.3.1))(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@tamagui/core': 1.121.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-native-svg: 15.11.1(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.18)(react@18.3.1))(react@18.3.1)
+    transitivePeerDependencies:
+      - react-dom
+
   '@tamagui/helpers-node@1.121.11':
     dependencies:
       '@tamagui/types': 1.121.11
@@ -7152,6 +7175,15 @@ snapshots:
       '@tamagui/text': 1.121.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tamagui/web': 1.121.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
+    transitivePeerDependencies:
+      - react-dom
+
+  '@tamagui/lucide-icons@1.121.11(react-dom@18.3.1(react@18.3.1))(react-native-svg@15.11.1(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.18)(react@18.3.1))(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@tamagui/core': 1.121.11(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@tamagui/helpers-icon': 1.121.11(react-dom@18.3.1(react@18.3.1))(react-native-svg@15.11.1(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.18)(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-native-svg: 15.11.1(react-native@0.76.6(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@types/react@18.3.18)(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
       - react-dom
 
