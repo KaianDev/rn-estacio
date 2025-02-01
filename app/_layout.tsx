@@ -19,6 +19,10 @@ export default function RootLayout() {
         <Stack>
           <Stack.Screen name="index" options={{ headerShown: false }} />
           <Stack.Screen name="engineer" options={{ headerShown: false }} />
+          <Stack.Screen
+            name="engineer-result"
+            options={{ headerShown: false }}
+          />
         </Stack>
       </ThemeProvider>
     </TamaguiProvider>

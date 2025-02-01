@@ -1,8 +1,8 @@
-import { Text, View, XStack } from "tamagui"
 import { Building2 } from "@tamagui/lucide-icons"
-import { EngineerForm } from "../components/engineer/form"
+import { Text, View, XStack } from "tamagui"
+import { EngineerResult } from "../components/engineer/result"
 
-export default function EngineerPage() {
+export default function EngineerResultPage() {
   return (
     <View backgroundColor={"$gray1"} flex={1}>
       <XStack
@@ -19,8 +19,7 @@ export default function EngineerPage() {
         </Text>
         <Building2 size={32} />
       </XStack>
-
-      <EngineerForm />
+      <EngineerResult />
     </View>
   )
 }

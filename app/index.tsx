@@ -1,5 +1,5 @@
 import { router } from "expo-router"
-import { Image, SafeAreaView, StyleSheet } from "react-native"
+import { SafeAreaView, StyleSheet } from "react-native"
 import { Button, Text, View, YStack } from "tamagui"
 import { TeamBuilderIcon } from "../components/icons/team-builder"
 
