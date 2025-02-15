@@ -2,6 +2,7 @@ import { router } from "expo-router"
 import { SafeAreaView, StyleSheet } from "react-native"
 import { Button, Text, View, YStack } from "tamagui"
 import { TeamBuilderIcon } from "../components/icons/team-builder"
+import { Footer } from "../components/layout/footer"
 
 export default function HomePage() {
   return (
@@ -10,6 +11,7 @@ export default function HomePage() {
         backgroundColor={"$gray1"}
         gap={40}
         width={"100%"}
+        paddingTop={40}
         alignItems="center"
         justifyContent="center"
         flex={1}>
@@ -33,6 +35,9 @@ export default function HomePage() {
           alignItems="center">
           Entrar
         </Button>
+        <View marginTop={"auto"}>
+          <Footer />
+        </View>
       </View>
     </SafeAreaView>
   )
