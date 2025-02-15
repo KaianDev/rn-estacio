@@ -4,8 +4,10 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { engineerFormSchema, EngineerFormSchema } from "../../schemas/engineer"
 import { maskCurrency } from "../../helpers/mask-currency"
 import { router } from "expo-router"
+import { useEngineerStore } from "../../stores/engineer"
 
 export function EngineerForm() {
+  const { setResults } = useEngineerStore()
   const form = useForm<EngineerFormSchema>({
     resolver: zodResolver(engineerFormSchema),
     defaultValues: {
@@ -17,10 +19,7 @@ export function EngineerForm() {
   const handleSubmit = form.handleSubmit((data) => {
     const budgetValue = +data.budgetValue
     const proposalValue = +data.proposalValue
-    console.log({
-      budgetValue,
-      proposalValue,
-    })
+    setResults({ budgetValue, proposalValue })
     router.push("/engineer-result")
   })
 
