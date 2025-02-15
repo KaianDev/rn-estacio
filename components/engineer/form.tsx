@@ -1,10 +1,10 @@
 import { Controller, useForm } from "react-hook-form"
 import { Button, Input, Text, View } from "tamagui"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { engineerFormSchema, EngineerFormSchema } from "../../schemas/engineer"
-import { maskCurrency } from "../../helpers/mask-currency"
+import { engineerFormSchema, EngineerFormSchema } from "@schemas/engineer"
+import { maskCurrency } from "@helpers/mask-currency"
 import { router } from "expo-router"
-import { useEngineerStore } from "../../stores/engineer"
+import { useEngineerStore } from "@stores/engineer"
 
 export function EngineerForm() {
   const { setResults } = useEngineerStore()

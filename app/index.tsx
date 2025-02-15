@@ -1,8 +1,8 @@
 import { router } from "expo-router"
 import { SafeAreaView, StyleSheet } from "react-native"
 import { Button, Text, View, YStack } from "tamagui"
-import { TeamBuilderIcon } from "../components/icons/team-builder"
-import { Footer } from "../components/layout/footer"
+import { TeamBuilderIcon } from "@components/icons/team-builder"
+import { Footer } from "@components/layout/footer"
 
 export default function HomePage() {
   return (

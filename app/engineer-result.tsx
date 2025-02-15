@@ -1,7 +1,7 @@
 import { View } from "tamagui"
-import { EngineerResult } from "../components/engineer/result"
-import { Footer } from "../components/layout/footer"
-import { Header } from "../components/layout/header"
+import { EngineerResult } from "@components/engineer/result"
+import { Footer } from "@components/layout/footer"
+import { Header } from "@components/layout/header"
 
 export default function EngineerResultPage() {
   return (

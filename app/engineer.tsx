@@ -1,7 +1,7 @@
 import { View } from "tamagui"
-import { EngineerForm } from "../components/engineer/form"
-import { Footer } from "../components/layout/footer"
-import { Header } from "../components/layout/header"
+import { EngineerForm } from "@components/engineer/form"
+import { Footer } from "@components/layout/footer"
+import { Header } from "@components/layout/header"
 
 export default function EngineerPage() {
   return (

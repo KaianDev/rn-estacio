@@ -1,5 +1,5 @@
 import { AlertCircle, CircleCheck } from "@tamagui/lucide-icons"
-import { Text, View, XStack } from "tamagui"
+import { Text, XStack } from "tamagui"
 
 interface EngineerResultBadgeProps {
   title: string

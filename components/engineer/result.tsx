@@ -1,9 +1,9 @@
 import { Button, Text, View, YStack } from "tamagui"
-import { EngineerResultItem } from "./result-item"
-import { EngineerResultBadge } from "./result-badge"
+import { EngineerResultItem } from "@components/engineer/result-item"
+import { EngineerResultBadge } from "@components/engineer/result-badge"
 import { router } from "expo-router"
-import { useEngineerStore } from "../../stores/engineer"
-import { formatCurrency } from "../../helpers/format-currency"
+import { useEngineerStore } from "@stores/engineer"
+import { formatCurrency } from "@helpers/format-currency"
 
 export function EngineerResult() {
   const { results, clearResults } = useEngineerStore()

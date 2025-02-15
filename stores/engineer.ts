@@ -1,5 +1,5 @@
 import { create } from "zustand"
-import { EngineerResultCalc } from "../types/engineer-result-calc"
+import { EngineerResultCalc } from "@interfaces/engineer-result-calc"
 
 interface StateProps {
   results: EngineerResultCalc | null
